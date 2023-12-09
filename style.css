@@ -364,6 +364,9 @@ footer {
 }
 
 @media (max-width: 477px) {
+    #navbar a {
+        margin-bottom: 5px;
+    }
     #welcome-container {
         flex-direction: column;
         justify-content: center;
@@ -371,5 +374,8 @@ footer {
     #myphoto-container {
         width: 100%;
     }
-    
+    #text-container {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
 }
