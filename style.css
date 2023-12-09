@@ -375,7 +375,6 @@ footer {
         margin-top: 20px;
         padding: 0 30px;
         width: 100%;
-        flex-wrap: wrap;
     }
     .sec-header {
         margin: 15px 0;
@@ -392,7 +391,7 @@ footer {
     }
     .lan-card {
         width: 85%;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .con {
         width: 90%;
