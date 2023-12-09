@@ -388,10 +388,13 @@ footer {
         width: 90%;
         height: auto;
     }
+    #lan-card-container {
+        flex-wrap: wrap;
+    }
     .lan-card {
-        width: 90%;
+        width: 80%;
     }
     .con {
-        width: 85%;
+        width: 80%;
     }
 }
