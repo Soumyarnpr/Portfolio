@@ -146,7 +146,6 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 .fade-in-text {
     opacity: 0;
     animation: fadeIn 2s forwards;
-    /* Adjust the duration as needed */
     animation-delay: 2s;
 }
 
@@ -376,6 +375,23 @@ footer {
     }
     #text-container {
         margin-top: 20px;
-        padding: 0 20px;
+        padding: 0 30px;
+        width: 100%;
+    }
+    .sec-header {
+        margin: 15px 0;
+    }
+    .sec-pad {
+        padding: 10px 30px; 
+    }
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+    .lan-card {
+        width: 90%;
+    }
+    .con {
+        width: 85%;
     }
 }
