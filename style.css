@@ -362,7 +362,7 @@ footer {
 
 @media (max-width: 477px) {
     #navbar a {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
     #welcome-container {
         flex-direction: column;
@@ -375,6 +375,7 @@ footer {
         margin-top: 20px;
         padding: 0 30px;
         width: 100%;
+        flex-wrap: wrap;
     }
     .sec-header {
         margin: 15px 0;
@@ -390,9 +391,10 @@ footer {
         flex-wrap: wrap;
     }
     .lan-card {
-        width: 80%;
+        width: 85%;
+        margin-bottom: 15px;
     }
     .con {
-        width: 80%;
+        width: 90%;
     }
 }
