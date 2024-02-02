@@ -13,6 +13,27 @@
     font-family: 'League Spartan';
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-col);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--col2);
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--col3);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -453,6 +474,7 @@ footer {
     #project-container {
         justify-content: center;
     }
+
     .project-card {
         width: 75%;
         height: auto;
