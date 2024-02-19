@@ -150,16 +150,20 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 }
 
 #myphoto-container {
-    width: 35vw;
+    width: 40vw;
+    padding-left: 60px;
+    padding-top: 40px;
 }
 
 #myphoto {
-    width: 100%;
+    width: 75%;
+    border-radius: 65% 35% 66% 34% / 71% 68% 32% 29%;
     animation: breathAnimation 2s linear forwards;
     filter: drop-shadow(0 5px 5px #000);
 }
 
 #text-container {
+    width: 60vw;
     display: flex;
     justify-content: end;
     align-items: left;
@@ -396,7 +400,7 @@ footer {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 788px) {
     #nav {
         display: flex;
         flex-direction: column;
@@ -447,15 +451,19 @@ footer {
     #welcome-container {
         flex-direction: column;
         justify-content: center;
+        padding-left: 10px;
+        padding-top: 0;
     }
 
     #myphoto-container {
         width: 100%;
+        padding-left: 125px;
     }
 
     #text-container {
+        width: 100%;
         margin-top: 20px;
-        padding: 0 30px;
+        padding: 0 85px;
         width: 100%;
     }
 
@@ -505,17 +513,22 @@ footer {
     }
 
     #myphoto-container {
-        width: 100%;
+    padding-left: 52px;
+    padding-top: 00px;
+    }
+
+    #myphoto{
+        width: 80%;
     }
 
     #text-container {
         margin-top: 20px;
-        padding: 0 30px;
+        padding-left: 70px;
         width: 100%;
     }
 
     #text-container h1 {
-        display: inline;
+        white-space: break-spaces;
     }
 
     .sec-header {
