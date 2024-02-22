@@ -264,7 +264,7 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
     border: 2px solid var(--col2);
     text-align: center;
     box-shadow: 0 5px 10px #000;
-    ;
+    transition: 0.3s;
 }
 
 .lan-box-container {
@@ -282,6 +282,13 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
     color: var(--col3);
     background-color: var(--bg-col);
     box-shadow: 0 2px 5px #000;
+    transition: 0.3s;
+}
+.lan-card:hover{
+    scale: 105%;
+}
+.lan-box:hover {
+    scale: 1.1;
 }
 
 .lan-box:nth-child(2),
