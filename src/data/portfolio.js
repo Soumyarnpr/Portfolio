@@ -103,15 +103,19 @@ export const projects = [
 export const skillGroups = [
 	{
 		title: "Programming Languages",
-		skills: ["C", "C++", "Java", "Python"],
+		skills: ["Java", "Python", "JavaScript"],
 	},
 	{
 		title: "Databases",
 		skills: ["SQL/MySQL", "MongoDB"],
 	},
 	{
-		title: "Web Technologies",
-		skills: ["HTML", "CSS", "JavaScript", "NodeJS", "ExpressJS"],
+		title: "Frontend",
+		skills: ["React.js", "Next.js", "HTML", "CSS"],
+	},
+	{
+		title: "Backend",
+		skills: ["NodeJS", "ExpressJS"],
 	},
 ];
 
