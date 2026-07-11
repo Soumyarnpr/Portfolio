@@ -9,8 +9,9 @@ export default function AnimatedWord({
   holdDelay = 1200,
 }) {
   const stableWords = useMemo(() => words.filter(Boolean), [words]);
+  const initialWord = stableWords[0] ?? "";
   const [wordIndex, setWordIndex] = useState(0);
-  const [text, setText] = useState("");
+  const [text, setText] = useState(initialWord);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
@@ -20,7 +21,6 @@ export default function AnimatedWord({
 
     const activeWord = stableWords[wordIndex % stableWords.length];
     const isFullWord = text === activeWord;
-    const isEmpty = text.length === 0;
     const delay = isFullWord && !deleting ? holdDelay : deleting ? deleteSpeed : typeSpeed;
 
     const timer = window.setTimeout(() => {
@@ -34,8 +34,16 @@ export default function AnimatedWord({
         return;
       }
 
-      if (deleting && !isEmpty) {
+      if (deleting && text.length > 1) {
         setText(activeWord.slice(0, text.length - 1));
+        return;
+      }
+
+      if (deleting) {
+        const nextIndex = (wordIndex + 1) % stableWords.length;
+        setDeleting(false);
+        setWordIndex(nextIndex);
+        setText(stableWords[nextIndex].slice(0, 1));
         return;
       }
 

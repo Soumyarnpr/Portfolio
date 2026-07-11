@@ -6,6 +6,34 @@ export const navItems = [
 
 export const projects = [
 	{
+		title: "Cake n' Shapes",
+		description:
+			"A full-stack e-commerce application featuring secure authentication, REST APIs, shopping cart, and admin dashboard. Designed MongoDB database schemas, implemented role-based authorization and a responsive user interface, and deployed a scalable, production-ready backend architecture.",
+		image: "/images/cakenshapes.png",
+		tags: ["Node.js", "MongoDB", "E-Commerce"],
+		links: [
+			{
+				label: "Live site",
+				href: "https://cakenshapes.in/",
+				type: "live",
+			},
+		],
+	},
+	{
+		title: "FoodieFiesta",
+		description:
+			"A MERN-stack food platform with recipe sharing, nutrition tracking, community engagement and an admin dashboard. Built scalable REST APIs, implemented CRUD operations, and designed a responsive application.",
+		image: "/images/foodiefiesta.png",
+		tags: ["MERN", "Foodie", "Community"],
+		links: [
+			{
+				label: "Live site",
+				href: "https://foodiefiestaa.vercel.app/",
+				type: "live",
+			},
+		],
+	},
+	{
 		title: "MEOWMAZING",
 		description:
 			"An all-encompassing platform for cat lovers with breed info, care tips, an e-commerce shop, and a vibrant community.",
@@ -76,28 +104,6 @@ export const projects = [
 			},
 		],
 	},
-	{
-		title: "Random Joke Generator",
-		description:
-			"A lightweight API project that generates random jokes through a simple JavaScript interface.",
-		image: "/images/jokes.png",
-		tags: ["API", "JavaScript", "Fun"],
-		links: [
-			{
-				label: "Source code",
-				href: "https://github.com/Soumyarnpr/myJokes/blob/94fa10950f8b82975953f55acc805b708f5adb26/jokes.html",
-				type: "github",
-			},
-		],
-	},
-	{
-		title: "Shopping Website",
-		description:
-			"A static shopping website developed with HTML, CSS, and JavaScript.",
-		image: "/images/shoping-website.png",
-		tags: ["Static site", "CSS", "JavaScript"],
-		links: [],
-	},
 ];
 
 export const skillGroups = [
@@ -111,11 +117,15 @@ export const skillGroups = [
 	},
 	{
 		title: "Frontend",
-		skills: ["React.js", "Next.js", "HTML", "CSS"],
+		skills: ["React.js", "Next.js", "HTML5", "CSS3"],
 	},
 	{
 		title: "Backend",
 		skills: ["NodeJS", "ExpressJS"],
+	},
+	{
+		title: "Tools & Tech",
+		skills: ["Git & GitHub", "Linux basics", "VS Code", "Microsoft Power BI"],
 	},
 ];
 
@@ -163,13 +173,8 @@ export const profile = {
 	greeting: "Hi, I am Soumya Ranjan Parida.",
 	heroLead:
 		"I build clean, responsive web projects with practical code, expressive interfaces, and a student mindset that keeps learning in motion.",
-	roleWords: ["developer", "programmer", "student"],
+	roleWords: ["developer.", "programmer.", "professional."],
 	photo: "/images/soumya-p.jpg",
 	resume: "/images/resume.pdf",
 	email: "soumyarnpr@gmail.com",
-	stats: [
-		{ value: projects.length, label: "Projects" },
-		{ value: skillGroups.length, label: "Skill groups" },
-		{ value: contactLinks.length, label: "Contact paths" },
-	],
 };

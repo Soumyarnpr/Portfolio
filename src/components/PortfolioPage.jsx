@@ -33,8 +33,7 @@ export default function PortfolioPage() {
         .from(".hero-kicker", { y: 18, autoAlpha: 0 })
         .from(".hero-title", { y: 28, autoAlpha: 0 }, "-=0.55")
         .from(".hero-lead", { y: 24, autoAlpha: 0 }, "-=0.5")
-        .from(".hero-actions > *", { y: 18, autoAlpha: 0, stagger: 0.08 }, "-=0.45")
-        .from(".hero-stats > *", { y: 18, autoAlpha: 0, stagger: 0.08 }, "-=0.45")
+        .from(".hero-actions", { y: 16, duration: 0.7 }, "-=0.35")
         .from(".hero-photo", { scale: 0.92, rotate: -2, autoAlpha: 0 }, "-=1");
 
       gsap.utils.toArray(".reveal").forEach((element) => {
