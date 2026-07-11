@@ -170,7 +170,7 @@ export const contactLinks = [
 
 export const profile = {
 	name: "Soumya Ranjan Parida",
-	greeting: "Hi, I am Soumya Ranjan Parida.",
+	greeting: "Hi, I am Soumya.",
 	heroLead:
 		"I build clean, responsive web projects with practical code, expressive interfaces, and a student mindset that keeps learning in motion.",
 	roleWords: ["developer.", "programmer.", "professional."],
