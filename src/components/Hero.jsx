@@ -7,11 +7,11 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="hero-section section-shell flex min-h-[100svh] items-center pt-[5.25rem] pb-10 md:min-h-screen md:pt-32 md:pb-16"
+			className="hero-section section-shell flex min-h-svh items-center pt-21 pb-10 md:min-h-screen md:pt-32 md:pb-16"
 		>
 			<div className="hero-layout grid w-full items-center gap-6 sm:gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
 				<div className="hero-photo order-1">
-					<div className="hero-photo-wrap relative mx-auto aspect-square w-full max-w-[220px] sm:max-w-[320px] md:max-w-[420px]">
+					<div className="hero-photo-wrap relative mx-auto aspect-square w-full max-w-55 sm:max-w-[320px] md:max-w-105">
 						<div className="hero-photo-frame absolute inset-0 translate-x-3 translate-y-3 bg-orange-peel/80 blur-sm md:translate-x-5 md:translate-y-5" />
 						<div className="hero-photo-frame absolute inset-0 -translate-x-2 -translate-y-2 border border-turquoise/60 md:-translate-x-3 md:-translate-y-3" />
 						<div className="hero-photo-frame relative h-full overflow-hidden border border-white/20 bg-white/10 shadow-2xl shadow-black/40">
@@ -28,7 +28,7 @@ export default function Hero() {
 				</div>
 
 				<div className="hero-copy order-2 text-center lg:text-left">
-					<h1 className="hero-title mx-auto max-w-4xl break-words text-[1.82rem] font-extrabold leading-[1.06] text-baby-powder sm:text-4xl md:text-6xl lg:mx-0">
+					<h1 className="hero-title mx-auto max-w-4xl wrap-break-word text-[1.82rem] font-extrabold leading-[1.06] text-baby-powder sm:text-4xl md:text-6xl lg:mx-0">
 						{profile.greeting} I am a{" "}
 						<AnimatedWord words={profile.roleWords} />
 					</h1>
@@ -36,7 +36,7 @@ export default function Hero() {
 						{profile.heroLead}
 					</p>
 
-					<div className="hero-actions mx-auto mt-5 flex max-w-[340px] flex-col gap-2 sm:max-w-none sm:flex-row sm:gap-3 md:mt-7 lg:mx-0">
+					<div className="hero-actions mx-auto mt-5 flex max-w-85 flex-col gap-2 sm:max-w-none sm:flex-row sm:gap-3 md:mt-7 lg:mx-0">
 						<a
 							href="#projects"
 							className="hero-action-link inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-turquoise px-5 py-2.5 text-sm font-bold text-rich-black transition hover:bg-orange-peel focus:outline-none focus-visible:ring-2 focus-visible:ring-baby-powder sm:text-base"

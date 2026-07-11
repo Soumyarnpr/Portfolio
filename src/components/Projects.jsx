@@ -43,9 +43,9 @@ export default function Projects() {
 					return (
 						<article
 							key={project.title}
-							className="project-card reveal group relative flex h-full min-h-[430px] flex-col overflow-hidden rounded-lg border border-white/12 bg-rich-black/88 shadow-2xl shadow-black/28 transition duration-300 ease-out hover:-translate-y-2 hover:border-turquoise/45 hover:shadow-turquoise/12 focus-within:-translate-y-2 focus-within:border-turquoise/45"
+							className="project-card reveal group relative flex h-full min-h-107.5 flex-col overflow-hidden rounded-lg border border-white/12 bg-rich-black/88 shadow-2xl shadow-black/28 transition duration-300 ease-out hover:-translate-y-2 hover:border-turquoise/45 hover:shadow-turquoise/12 focus-within:-translate-y-2 focus-within:border-turquoise/45"
 						>
-							<div className="relative h-[11.5rem] overflow-hidden bg-white/8 sm:h-48">
+							<div className="relative h-46 overflow-hidden bg-white/8 sm:h-48">
 								<Image
 									src={project.image}
 									alt={`${project.title} preview`}
@@ -53,7 +53,7 @@ export default function Projects() {
 									sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
 									className="project-image object-cover transition duration-700 ease-out group-hover:scale-[1.08] group-hover:saturate-125"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-rich-black/72 via-rich-black/12 to-transparent" />
+								<div className="absolute inset-0 bg-linear-to-t from-rich-black/72 via-rich-black/12 to-transparent" />
 								<div className="absolute right-3 top-3 flex gap-2">
 									{project.links.length > 0 ? (
 										project.links.map((link) => {
@@ -81,7 +81,7 @@ export default function Projects() {
 							</div>
 
 							<div className="flex flex-1 flex-col p-5">
-								<h3 className="break-words text-[1.45rem] font-extrabold leading-[1.08] text-baby-powder transition duration-300 group-hover:text-turquoise">
+								<h3 className="wrap-break-word text-[1.45rem] font-extrabold leading-[1.08] text-baby-powder transition duration-300 group-hover:text-turquoise">
 									{project.title}
 								</h3>
 								<p
